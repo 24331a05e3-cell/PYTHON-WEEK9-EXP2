@@ -1,0 +1,13 @@
+#24331A05E3
+#To implement seek(), tell() and flush()
+file=open("file.txt","r")
+print(file.tell())
+file.seek(2)
+print(file.tell())
+file.close()
+file=open("file.txt","w")
+file.write("legand")
+file.flush()
+file.close()
+file=open("file.txt","r")
+print(file.read())
